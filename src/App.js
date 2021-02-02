@@ -1,12 +1,11 @@
-import './App.css';
-import Header from './Header';
+import { DefaultLayout } from "./components";
 
-function App() {
+import "./App.css";
+
+export const App = () => {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <DefaultLayout>
+      <h1>Body</h1>
+    </DefaultLayout>
   );
-}
-
-export default App;
+};
